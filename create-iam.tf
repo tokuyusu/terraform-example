@@ -4,6 +4,7 @@ resource "aws_iam_user" "admin" {
 
 resource "aws_iam_access_key" "admin" {
   user = aws_iam_user.admin.name
+  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
 
 resource "aws_iam_user_login_profile" "admin" {
