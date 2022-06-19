@@ -1,6 +1,6 @@
 resource "aws_iam_user" "root" {
   name = "root"
-  path = "/test/"
+  path = "/root/"
 }
 
 resource "aws_iam_access_key" "root" {
